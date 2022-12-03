@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.About"
+             Title="About"
+			 BackgroundColor="{DynamicResource PrimaryColor}">
+  
+    <StackLayout>
+            <StackLayout.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="White"
+                                      Offset="0.1"/>
+                    <GradientStop Color="Black"
+                                      Offset="1.0"/>
+
+                </LinearGradientBrush>
+
+            </StackLayout.Background>
+            <Frame BackgroundColor="DarkOliveGreen" Padding="24" CornerRadius="0" VerticalOptions="Start">
+                <Label Text="Who we are" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="This application is created during the cross mobile application  course in WSU" FontSize="Subtitle" Padding="5,10,5,10"/>
+
+            <Label Text="Our team includes:" FontSize="Subtitle" Padding="10,5,10,5"/>
+            <ListView  SeparatorColor="ForestGreen" SelectionMode="None">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Anil Chowdary</x:String>
+                        <x:String>Anudeep</x:String>
+                        <x:String>Rahul</x:String>
+
+                    </x:Array>
+                </ListView.ItemsSource>
+                
+            </ListView>
+    </StackLayout>
+</ContentPage>
